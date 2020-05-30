@@ -47,7 +47,7 @@ stages:
   - deployment: Deploy
     pool:
       vmImage: 'ubuntu-16.04'
-    environment: 'spike.default'
+    environment: spike
     variables:
     - group: 'Release'
     strategy:
