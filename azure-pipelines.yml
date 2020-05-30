@@ -45,11 +45,12 @@ stages:
   dependsOn: Build
   jobs:
   - deployment: Deploy
+    displayName: Deploy
     pool:
       vmImage: 'ubuntu-16.04'
     environment: spike
     variables:
-    - group: 'Release'
+    - group: Release
     strategy:
       runOnce:
         deploy:
